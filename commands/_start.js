@@ -9,6 +9,10 @@
   aliases: 
 CMD*/
 
+if(params){
+GetTask("/task_"+params)
+return
+}
 Api.sendMessage({
   text:
     "Hello, " +
@@ -19,4 +23,3 @@ Api.sendMessage({
   },
   parse_mode: "html"
 })
-
