@@ -31,7 +31,7 @@ var webhookUrl = Libs.Webhooks.getUrlFor({
 balance.add(-parseFloat(message))
 HTTP.post({
   url:
-    "https://api.bots.business/v1/bots/14896/new-webhook?&command=onTransferRequest&public_user_token=0567f8dba47bd3b2ce3557e1fe09ee6d&user_id=8785339",
+    "PERSONAL WEBHOOK",
   body: {
     // BB Points amount
     amount: parseInt(message),
@@ -40,7 +40,7 @@ HTTP.post({
     // note for @bbpoints channel
     note: "#testTransfer by " + bot.name,
     webhookUrl: webhookUrl,
-    secret: "groupkris" // from step 1
+    secret: "PERSONAL SECRET" // from step 1
   }
 })
 Api.editMessageText({
