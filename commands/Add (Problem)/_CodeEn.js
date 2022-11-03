@@ -31,7 +31,7 @@ Bot.run({
     description: description,
     pic: pic,
     code: message,
-opt: opt
+    opt: opt
   }
 })
 
