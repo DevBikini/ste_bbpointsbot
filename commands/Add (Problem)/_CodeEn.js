@@ -13,6 +13,7 @@ var id = options.id
 var title = options.title
 var description = options.description
 var pic = options.pic
+var opt = options.change
 Api.editMessageText({
   message_id: id,
   text: "<b>Enter Price or Reward of your problem.</b>",
@@ -29,7 +30,8 @@ Bot.run({
     title: title,
     description: description,
     pic: pic,
-    code: message
+    code: message,
+opt: opt
   }
 })
 
