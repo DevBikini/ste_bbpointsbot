@@ -13,7 +13,7 @@ var id = options.id
 var title = options.title
 var description = options.description
 var pic = options.pic
-var opt = options.change
+var opt = "opportunity"
 Api.editMessageText({
   message_id: id,
   text: "<b>Enter Price or Reward of your problem.</b>",
